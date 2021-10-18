@@ -15,6 +15,7 @@ public class SaveDimensions : MonoBehaviour
 
     private void Start()
     {
+        //Au démarrage, les input prennent les valeurs par défaut dans le menu, c'est-à-dire les dernières valeurs en mémoire
         WidthText = PlayerPrefs.GetString("WidthFile");
         inputWidth.text = WidthText;
         LengthText = PlayerPrefs.GetString("LengthFile");
@@ -25,8 +26,13 @@ public class SaveDimensions : MonoBehaviour
 
     public void SaveInfo()
     {
+        //La fonction est déclenchée quand l'utilisateur clique sur "Placer dans l'inventaire"
+        //La string "WidthText" prend la valeur de l'input rentré par l'utilisateur.
+        //Puis elle associe cette string au fichier "WidthFile" qui la garde en mémoire pour être réutilisée
         WidthText = inputWidth.text;
         PlayerPrefs.SetString("WidthFile", WidthText);
+
+        //idem pour les autres dimensions
         LengthText = inputLength.text;
         PlayerPrefs.SetString("LengthFile", LengthText);
         HeightText = inputHeight.text;
