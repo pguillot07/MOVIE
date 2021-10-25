@@ -1,3 +1,5 @@
+Les scripts sont tous dans Assets > Scripts et portent le nom des component auxquels ils doivent être associés (ne pas regarder DragAndDrop)
+
 1) Les Items
 Tous les items à mettre dans l'inventaire doivent posséder le component "Items". Dans ce component, décréter d'un ID, d'une description, et glisser un Sprite pour l'Icone de l'inventaire.
 Les items en prefab sont contenus dans le fichier Assets > Inventory > ItemsInInventory et à faire glisser dans la Scene.
