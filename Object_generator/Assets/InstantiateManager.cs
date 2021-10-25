@@ -16,7 +16,7 @@ public class InstantiateManager : MonoBehaviour
         //Créé une forme primitive (un cube) 
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-        //Importe les valeurs de Width, Length et Height
+        //Importe les valeurs de Width, Length et Height depuis les fichiers crées dans SaveDimensions.cs
         float WidthValue = float.Parse(PlayerPrefs.GetString("WidthFile"), CultureInfo.InvariantCulture.NumberFormat);
         float LengthValue = float.Parse(PlayerPrefs.GetString("LengthFile"), CultureInfo.InvariantCulture.NumberFormat);
         float HeightValue = float.Parse(PlayerPrefs.GetString("HeightFile"), CultureInfo.InvariantCulture.NumberFormat);
@@ -30,8 +30,16 @@ public class InstantiateManager : MonoBehaviour
         Vector3 scale = new Vector3(WidthValue, HeightValue, LengthValue);
         cube.transform.localScale = scale;
 
+        //Desccription
+        string description = $"Forme créée manuellement. " +
+            $"\n Dimensions : " +
+            $"\n Largeur : {WidthValue} " +
+            $"\n Longueur : {LengthValue} " +
+            $"\n Hauteur : {HeightValue}";
+
         //Ajoute l'objet à l'inventaire
-        
+
+
 
     }
 

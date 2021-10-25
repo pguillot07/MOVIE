@@ -193,9 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Enter Length...
-
-'
+  m_Text: Enter Length...
 --- !u!222 &108725929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -611,9 +609,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Create
-
-'
+  m_Text: "Cr\xE9er dans l'inventaire"
 --- !u!222 &637637366
 CanvasRenderer:
   m_ObjectHideFlags: 0
