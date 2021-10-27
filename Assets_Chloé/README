@@ -1,11 +1,17 @@
+Les scripts sont tous dans Assets > Scripts et portent le nom des component auxquels ils doivent être associés (ne pas regarder DragAndDrop)
+
 1) Les Items
 Tous les items à mettre dans l'inventaire doivent posséder le component "Items". Dans ce component, décréter d'un ID, d'une description, et glisser un Sprite pour l'Icone de l'inventaire.
+Les items en prefab sont contenus dans le fichier Assets > Inventory > ItemsInInventory et à faire glisser dans la Scene.
 
 2) L'inventaire 
+L'inventaire physique est contenu dans Assets et correspond au prefab Canvas_Inventory.
+Dans l'inventaire physique en lui-même (le Canvas), associer le component Slot à tous les Slots
+
+
 Le Player doit posséder le component Inventory. 
 Dans Inventory, faire glisser :
   Panel : panel
   Inventory : inventory
   List Inventory : tous les GameObject Items que l'on souhaite voir apparaître dans l'inventaire (max 27 pour le moment)
   
-Dans l'inventaire physique en lui-même (le Canvas), associer le component Slot à tous les Slots
