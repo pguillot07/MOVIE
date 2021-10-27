@@ -18,8 +18,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] listInventory;
     private int allItemsInventory;
 
-    private bool makeUpdate = false;
-    
+    private bool makeUpdate = false;    
     void Start()
     {   //Commence par lire toutes les cases de l'inventaire et marque vide celles qui le sont
         
@@ -39,7 +38,6 @@ public class Inventory : MonoBehaviour
         for (int i=0; i < allItemsInventory; i++){
             object1 = listInventory[i];
             item = object1.GetComponent<Items>();
-            Debug.Log(item.ID);
             AddToInventory(object1, item.ID, item.description, item.icon);
         }
 

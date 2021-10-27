@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 //Component commun à tous les Slots de l'inventaire
 
-public class Slot : MonoBehaviour, IPointerClickHandler //, IDragHandler, IEndDragHandler
+public class Slot : MonoBehaviour, IPointerClickHandler, IDragHandler, IEndDragHandler
 {
     //Possède les mêmes caractéristiques que Items
     public GameObject item;
@@ -35,12 +35,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler //, IDragHandler, IEndDr
         }
         
     }
-/* 
+
     public void OnDrag(PointerEventData eventData){
         transform.position = Input.mousePosition;
     }
-
     public void OnEndDrag(PointerEventData eventData){
         transform.position = initialPosition;
-    } */
+    }
 }
