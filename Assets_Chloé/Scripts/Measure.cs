@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class Measure : MonoBehaviour
 {
     public GameObject measureCanvas;
-    public GameObject button;
 
     public GameObject pointeurA;
     public GameObject pointeurB;
@@ -18,7 +17,7 @@ public class Measure : MonoBehaviour
     public GameObject add1;
     public GameObject add2;
     public GameObject deplacer;
-    public Text distanceText;
+    public Text distanceNumber;
 
 
     Vector3 worldPosition;
@@ -52,7 +51,7 @@ public class Measure : MonoBehaviour
                 Vector3 pointA = pointeurA.transform.position;
                 Vector3 pointB = pointeurB.transform.position;
                 double dist = Math.Round(Vector3.Distance(pointA, pointB),2);
-                distanceText.text = dist.ToString() + " m";
+                distanceNumber.text = dist.ToString() + " m";
             }
         }
     }
@@ -104,7 +103,7 @@ public class Measure : MonoBehaviour
         pointeurB.SetActive(false);
         placedA = false;
         placedB = false;
-        distanceText.text = null;
+        distanceNumber.text = null;
         deplacer.SetActive(false);
         add2.SetActive(false);
         add1.SetActive(true);
