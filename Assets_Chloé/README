@@ -15,3 +15,13 @@ Dans Inventory, faire glisser :
   Inventory : inventory
   List Inventory : tous les GameObject Items que l'on souhaite voir apparaître dans l'inventaire (max 27 pour le moment)
   
+ 
+ 3) L'interface de mesure 
+ Le prefab MeasureCanvas est à importer dans la Scene en premier lieu, ainsi que les deux pointeurs A et B.
+ Le script Measure est à drag and drop sur le Player.
+ Dans le script Measure, drag and drop les GameObject du même nom, situés ou bien dans MeasureCanvas, ou dans la Scene.
+ 
+ Le script ButtonMeasure est à drag and drop sur le bouton "Réinitialiser" de MeasureCanvas.
+ 
+ L'interface s'ouvre ensuite en appuyant sur la touche M
+  
